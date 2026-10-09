@@ -2,8 +2,8 @@
 
 ## Student Details
 
-- **Full Name:** `<Enter name>`
-- **CCID:** `<Enter ccid>`
+- **Full Name:** Fikayo Ebyn-Ahisu
+- **CCID:** oebynahi
 
 ## References and Resources
 
