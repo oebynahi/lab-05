@@ -24,7 +24,15 @@ class CityRepository {
     }
 
     fun updateCity(oldCity: City, updatedCity: City) {
-        citiesRef.document(oldCity.name).set(updatedCity )
+//        citiesRef.document(oldCity.name).set(updatedCity )
+        if (oldCity.name != updatedCity.name) {
+            citiesRef.document(oldCity.name).delete()
+        }
+        citiesRef.document(updatedCity.name).set(updatedCity)
+    }
+
+    fun deleteCity(cityToDelete: City) {
+        citiesRef.document(cityToDelete.name).delete()
     }
 
     init {
