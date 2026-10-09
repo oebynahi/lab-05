@@ -153,6 +153,15 @@ fun CityListScreen(
                 ) {
                     Text("UPDATE CITY")
                 }
+
+                Button(
+                    modifier = Modifier.padding(vertical = 12.dp),
+                    onClick = {
+
+                    }
+                ) {
+                    Text("DELETE CITY")
+                }
             }
         }
         LazyColumn(modifier = Modifier.fillMaxSize()) {
